@@ -22,4 +22,8 @@ def self.random_word
   letters.shuffle!
   letters[0, rand(3..8)].join
   end
+
+  def self.random_price
+         rand(1..1000)
+  end
 end
