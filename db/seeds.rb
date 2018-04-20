@@ -7,7 +7,7 @@ require 'random_data'
     description: RandomData.random_paragraph
   )
 end
-topics = Topics.all
+topics = Topic.all
 
 # create sponsored posts
 30.times do

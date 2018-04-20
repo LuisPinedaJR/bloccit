@@ -62,6 +62,7 @@ ActiveRecord::Schema.define(version: 20180416012907) do
     t.datetime "updated_at", null: false
     t.index ["topic_id"], name: "index_sponsored_posts_on_topic_id"
 
+  end
 
   create_table "topics", force: :cascade do |t|
     t.string "name"
