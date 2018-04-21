@@ -7,6 +7,10 @@ Rails.application.routes.draw do
 
   resources :users, only: [:new, :create]
 
+  resources :questions
+    
+  resources :advertisements
+
   get 'about' => 'welcome#about'
   root 'welcome#index'
 end
