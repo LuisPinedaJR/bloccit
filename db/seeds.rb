@@ -47,9 +47,18 @@ end
   )
 end
 
+100.times do
+  Advertisement.create!(
+    title: RandomData.random_sentence,
+    copy:  RandomData.random_paragraph,
+    price: Random.rand(10)
+  )
+end
+
 puts "Seed finished"
 puts "#{Topic.count} topics created"
 puts "#{Post.count} posts created"
 puts "#{SponsoredPost.count} sponsored posts created"
 puts "#{Comment.count} comments created"
+puts "#{Advertisement.count} advertisements created"
 puts "#{Question.count} questions created"
