@@ -47,7 +47,8 @@ source 'https://rubygems.org'
    gem 'rails-controller-testing'
    gem 'shoulda'
  end
-
+ 
+ gem 'gravtastic'
  gem 'bootstrap-sass'
 
 # Used for encrypting passwords
